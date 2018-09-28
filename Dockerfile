@@ -6,7 +6,7 @@ ENV HDD_SIZE $HDD_SIZE
 ARG RAM_SIZE=1024M
 ENV RAM_SIZE $RAM_SIZE
 
-ARG BOOTDISK=https://distro.ibiblio.org/tinycorelinux/9.x/x86/release/CorePlus-current.iso
+ARG BOOTDISK=http://distro.ibiblio.org/tinycorelinux/9.x/x86/release/CorePlus-current.iso
 ENV BOOTDISK $BOOTDISK
 
 ARG KVM_ARCH=x86_64
