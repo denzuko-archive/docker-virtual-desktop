@@ -9,6 +9,9 @@ ENV RAM_SIZE $RAM_SIZE
 ARGS BOOTDISK=https://distro.ibiblio.org/tinycorelinux/9.x/x86/release/CorePlus-current.iso
 ENV BOOTDISK $BOOTDISK
 
+ARGS KVM_ARCH=x86_64
+ENV KVM_ARCH $KVM_ARCH
+
 LABEL com.dwightaspencer.schema.docker.cmd="docker run -ti -p 5905/tcp --rm denzuko/docker-virtual-desktop:latest"
 
 ADD $BOOTDISK /bootdisk.iso 
